@@ -31,7 +31,7 @@ export class AuthService {
         };
     }
 
-    public async setToken(email: string, type: TokenType) {
+    public setToken(email: string, type: TokenType) {
         const payload = {
             email: email,
             type: type,

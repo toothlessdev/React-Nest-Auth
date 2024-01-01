@@ -1,6 +1,6 @@
-export const JWT_SECRET = process.env.JWT_SECRET;
+export const JWT_SECRET = "JWTSecretKey";
 
 export enum TokenType {
-    ACCESS = 'ACCESS',
-    REFRESH = 'REFRESH',
+    ACCESS = "ACCESS",
+    REFRESH = "REFRESH",
 }
