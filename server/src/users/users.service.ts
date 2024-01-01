@@ -22,4 +22,10 @@ export class UsersService {
     public async readAllUsers() {
         return await this.usersRepository.find();
     }
+
+    public async readUserByEmail(email: string) {
+        return await this.usersRepository.findOne({
+            where: { email: email },
+        });
+    }
 }
